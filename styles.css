@@ -498,19 +498,18 @@ main .container h2 {
   border-radius: 0.5rem;
   background: #fff;
   cursor: pointer;
+  min-width: 284px;
   -webkit-box-shadow: 0 1px 3px 0 rgba(21, 27, 38, 0.15);
           box-shadow: 0 1px 3px 0 rgba(21, 27, 38, 0.15);
-  -webkit-transition: -webkit-transform 0.25s, -webkit-box-shadow 0.25s;
-  transition: -webkit-transform 0.25s, -webkit-box-shadow 0.25s;
-  transition: transform 0.25s, box-shadow 0.25s;
-  transition: transform 0.25s, box-shadow 0.25s, -webkit-transform 0.25s, -webkit-box-shadow 0.25s;
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
 }
 
 .task:hover {
-  -webkit-box-shadow: 0 1px 5px 0 rgba(21, 27, 38, 0.2);
-          box-shadow: 0 1px 5px 0 rgba(21, 27, 38, 0.2);
-  -webkit-transform: translateY(-0.25rem);
-          transform: translateY(-0.25rem);
+  -webkit-box-shadow: 0px 6px 20px 0 rgba(21, 27, 38, 0.2);
+          box-shadow: 0px 6px 20px 0 rgba(21, 27, 38, 0.2);
 }
 
 .task:not(:last-of-type) {
@@ -604,3 +603,29 @@ aside.active {
   color: #D84646;
 }
 /*# sourceMappingURL=styles.css.map */
+
+article {
+  border: 2px solid transparent;
+}
+
+.draggable-mirror {
+  z-index: 999;
+}
+
+.draggable-container--over article:not(.draggable-mirror) {
+  z-index: 0;
+}
+
+.draggable--over, .draggable-source--is-dragging {
+  border-color: goldenrod;
+  opacity: .4;
+  background: #eee;
+}
+
+.task-container:focus {
+  border: none;
+}
+
+.draggable-container--over {
+  border: none;
+}
