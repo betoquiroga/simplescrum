@@ -5,10 +5,12 @@ const hammerjs = new Hammer(body)
 
 hammerjs.on("panleft panright", ev => {
   if (ev.pointerType === "touch") {
-    if (ev.type === "panleft" && ev.distance > 100) {
+    const windowWidth = window.screen.width
+    const distance = Math.floor(ev.distance) >= 50
+    if (ev.type === 'panleft' && ev.center.x > windowWidth - 100 && distance) {
       formulario.classList.add("active")
     }
-    if (ev.type === "panright" && ev.distance > 100) {
+    if (type === 'panright' && distance) {
       formulario.classList.remove("active")
     }
   }
