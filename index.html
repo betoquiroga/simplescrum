@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleScrum</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="/images/logo.svg" alt="Logo SimpleScrum">
+      <button id="newTask" class="button">Crear tarea</button>
+    </div>
+  </header>
+  <main>
+    <div class="main-container">
+      <h1>SimpleScrum</h1>
+      <div class="container">
+        <h2>TO DO</h2>
+        <div class="task-container">
+          <article class="task">
+            <h3>Crear JSON del proyecto</h3>
+            <p>Responsable: <span>Beto Quiroga</span></p>
+            <p>Plazo: <span>05/06/2020</span></p>
+          </article>
+          <article class="task">
+            <h3>Crear JSON del proyecto</h3>
+            <p>Responsable: <span>Beto Quiroga</span></p>
+            <p>Plazo: <span>05/06/2020</span></p>
+          </article>
+          <article class="task">
+            <h3>Crear JSON del proyecto</h3>
+            <p>Responsable: <span>Beto Quiroga</span></p>
+            <p>Plazo: <span>05/06/2020</span></p>
+          </article>
+        </div>
+      </div>
+      <div class="container">
+        <h2>IN PROGRESS</h2>
+        <div class="task-container">
+          <article class="task">
+            <h3>Crear JSON del proyecto</h3>
+            <p>Responsable: <span>Beto Quiroga</span></p>
+            <p>Plazo: <span>05/06/2020</span></p>
+          </article>
+        </div>
+      </div>
+      <div class="container">
+        <h2>DONE</h2>
+        <div class="task-container">
+          <article class="task">
+            <h3>Crear JSON del proyecto</h3>
+            <p>Responsable: <span>Beto Quiroga</span></p>
+            <p>Plazo: <span>05/06/2020</span></p>
+          </article>
+          <article class="task">
+            <h3>Crear JSON del proyecto</h3>
+            <p>Responsable: <span>Beto Quiroga</span></p>
+            <p>Plazo: <span>05/06/2020</span></p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+  <aside>
+    <div class="aside-container">
+      <h2>Nueva Tarea</h2>
+      <div class="form-container">
+        <form>
+          <div class="input-container">
+            <label for="titleTask">Título</label>
+            <input name="titleTask" id="titleTask" type="text" placeholder="Escriba un título descriptivo">
+          </div>
+          <div class="input-container">
+            <label for="personTask">Responsable</label>
+            <select name="personTask" id="personTask">
+              <option value="">-Seleccionar-</option>
+              <option value="beto">Beto Quiroga</option>
+              <option value="juan">Juan Alexis</option>
+              <option value="otoniel">Otoniel R.</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="deadlineTask">Plazo de entrega</label>
+            <select name="deadlineTask" id="deadlineTask">
+              <option value="">-Seleccionar-</option>
+              <option value="one">1 día</option>
+              <option value="two">2 días</option>
+              <option value="seven">1 semana</option>
+            </select>
+          </div>
+          <div class="action-container">
+            <button type="submit">Guardar</button>
+            <button type="reset">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </aside>
+  
+</body>
+</html>
