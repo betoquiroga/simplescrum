@@ -5,8 +5,11 @@ axios.get(API_URL)
  .catch( err => console.log(err))
 
 function fillTasks(data) {
-  data.map(d => {
-    let newTask = document.createElement("article")
+  data.map(d => createTask(d))
+}
+
+function createTask(d) {
+  let newTask = document.createElement("article")
     newTask.classList.add("task")
 
     let taskTitle = document.createElement("h3")
@@ -35,6 +38,4 @@ function fillTasks(data) {
     if (d.state === "done") {
       columnDone.appendChild(newTask)
     }
-    
-  })
 }

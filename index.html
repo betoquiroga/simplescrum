@@ -37,14 +37,14 @@
     <div class="aside-container">
       <h2>Nueva Tarea</h2>
       <div class="form-container">
-        <form>
+        <form id="formTask">
           <div class="input-container">
             <label for="titleTask">Título</label>
-            <input name="titleTask" id="titleTask" type="text" placeholder="Escriba un título descriptivo">
+            <input name="titleTask" id="titleTask" type="text" placeholder="Escriba un título descriptivo" required>
           </div>
           <div class="input-container">
             <label for="personTask">Responsable</label>
-            <select name="personTask" id="personTask">
+            <select name="personTask" id="personTask" required>
               <option value="">-Seleccionar-</option>
               <option value="beto">Beto Quiroga</option>
               <option value="juan">Juan Alexis</option>
@@ -53,11 +53,11 @@
           </div>
           <div class="input-container">
             <label for="deadlineTask">Plazo de entrega</label>
-            <select name="deadlineTask" id="deadlineTask">
+            <select name="deadlineTask" id="deadlineTask" required>
               <option value="">-Seleccionar-</option>
-              <option value="one">1 día</option>
-              <option value="two">2 días</option>
-              <option value="seven">1 semana</option>
+              <option value="1">1 día</option>
+              <option value="2">2 días</option>
+              <option value="7">1 semana</option>
             </select>
           </div>
           <div class="action-container">
@@ -78,5 +78,6 @@
   <script src="/scripts/gestures.js"></script>
   <script src="/scripts/petitions.js"></script>
   <script src="/scripts/draganddrop.js"></script>
+  <script src="/scripts/form.js"></script>
 </body>
 </html>
