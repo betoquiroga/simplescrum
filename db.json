@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    { "id": 1,
+      "title": "Crear JSON para el proyecto",
+      "person": "beto",
+      "state": "to-do",
+      "deadline": 1591802130,
+      "created": 1591370128
+    },
+    { "id": 2,
+      "title": "Crear 2 JSON para el proyecto",
+      "person": "beto",
+      "state": "in-progress",
+      "deadline": 1591802130,
+      "created": 1591370128
+    },
+    { "id": 3,
+      "title": "Crear 3 JSON para el proyecto",
+      "person": "beto",
+      "state": "done",
+      "deadline": 1591802130,
+      "created": 1591370128
+    }
+  ]
+}
